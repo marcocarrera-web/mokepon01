@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body{
+    font-family: 'Silkscreen', cursive;
+    background: linear-gradient(300deg, teal, 60%, rgb(153, 35, 147));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    margin: 0px;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+}
+
+.subtitulo {
+    color: white;
+    margin: 10px;
+}
+
+#lista-mascotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+@media (max-width: 400px){
+    #lista-mascotas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    #botones button{
+        font-family: 'Comic Sans MS';
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: white;
+        border-color: transparent;
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    #botones button:disabled{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.8);
+    transition: .5s;
+    }
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+#ataque{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90%; 
+    margin: 0 auto;
+}
+
+#mensajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+#mensajes div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 20px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+#mascotas-en-duelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mascotas-en-duelo div{
+    display: flex;
+    flex-direction: column;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#mascotas-en-duelo div img{
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+#mascotas-en-duelo div span{
+    font-size: 25px;
+}
+
+#versus{
+    width: 30%;
+    filter: drop-shadow(0 2px 5px white);
+    margin: 0 -10% 0 -10%;
+}
+
+#botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.opciones-boton{
+    font-family: 'Comic Sans MS';
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: white;
+    border-color: transparent;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.opciones-boton:disabled{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.8);
+    transition: .5s;
+
+}
+
+.main-boton{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px transparent solid;
+}
+
+.reinicio-boton{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px transparent solid;
+}
+
+.mokepon {
+    width: 125px;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px white solid;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition:  .3s;
+}
+
+label:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+button:enabled:hover{
+    background-color:  rgba(0, 0, 0, 0.25);
+    border: 1px white solid;
+    color: white;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: white;
+    color: black;
+}
+
+.mokepon p{
+    margin: 0px;
+}
+
+img {
+    height:75%;
+}
+
+input{ 
+    display: none;
+}

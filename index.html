@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon | Marco Carrera</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <h1 class="titulo">Mokepon</h1>
+
+    <section id="lista-mascotas">
+        <h2 class="subtitulo">Elige tu Mokepon:</h2>
+        <div id="tarjetas" class="tarjetas"></div>
+        <button id="boton-mascotas" class="main-boton">Seleccionar</button>
+
+    </section>
+    <section id="ataque" hidden>
+
+        <section id="mensajes">
+            <div><span id="ataque-jugador">JUGADOR</span></div>
+            <div><span id="resultado">RESULTADO</span></div>
+            <div><span id="ataque-rival">RIVAL</span></div>
+        </section>
+
+        <section id="mascotas-en-duelo">
+            <div id="imagen-jugador">
+                <span id="vidas-jugador"></span>
+            </div>
+            <img id="versus" src="assets/vs.png" alt="versus">
+            <div id="imagen-rival">
+                <span id="vidas-rival"></span>
+            </div>
+        </section>
+
+        <h2><span id="mensaje-final">Elige tu ataque:</span></h2>
+
+        <section id="botones">
+        </section>
+
+        <section id="reiniciar" hidden>
+            <button id="boton-reiniciar" class="reinicio-boton">Reiniciar</button>
+        </section>
+                
+    </section>
+    <script src="./Js/mokepon.Js"></script>
+</body>
+</html>
